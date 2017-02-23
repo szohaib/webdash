@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Web Dash</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    
+    <style>
+        
+          body,html{
+		height: 100%;
+	}
+
+	
+	.main .row{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	
+
+	nav.sidebar.navbar {
+		border-radius: 0px;
+	}
+
+	nav.sidebar, .main{
+            -webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+            
+	}
+
+	
+	.main{
+		padding: 10px 10px 0 10px;
+	}
+
+	
+
+	
+	@media (min-width: 768px) {
+
+		
+		.main{
+                        position: absolute;
+			width: calc(100% - 40px); 
+			margin-left: 40px;
+			float: right;
+		}
+
+		
+		nav.sidebar:hover + .main{
+			margin-left: 200px;
+		}
+
+		
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		
+		nav.sidebar a{
+			padding-right: 13px;
+		}
+
+		
+		nav.sidebar .navbar-nav > li:first-child{
+			border-top: 1px #e5e5e5 solid;
+		}
+
+		
+		nav.sidebar .navbar-nav .open .dropdown-menu {
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			
+			border: 0;
+			-webkit-box-shadow: none;
+			
+		}
+
+		
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+                
+		nav.sidebar{
+			width: 200px;
+			height: 126%;
+			margin-left: -160px;
+			float: left;
+			z-index: 8000;
+			margin-bottom: 0px;
+		}
+
+		
+		nav.sidebar li {
+			width: 100%;
+		}
+
+		
+		nav.sidebar:hover{
+			margin-left: 0px;
+		}
+		
+		.forAnimate{
+			opacity: 0;
+		}
+                
+                .c1{
+           
+                    width: 550px;
+                    height: 420px;
+                    background-color: white;
+                    box-shadow: 10px 10px 10px 10px  #888;
+                }
+        
+                .c2{
+           
+                    width: 550px;
+                    height: 420px;
+                    background-color: white;
+                    box-shadow: 10px 10px 10px 10px  #888;
+                }
+        
+                .c3{
+           
+                    width: 550px;
+                    height: 420px;
+                    background-color: white;
+                    box-shadow: 10px 10px 10px 10px  #888;
+                }
+        
+                .c4{
+           
+                    width: 550px;
+                    height: 420px;
+                    background-color: white;
+                    box-shadow: 10px 10px 10px 10px  #888;
+                }
+            }
+
+	
+
+	@media (min-width: 1330px) {
+
+		
+		.main{
+			width: calc(100% - 200px); 
+			margin-left: 200px;
+		}
+
+		
+		nav.sidebar{
+			margin-left: 0px;
+			float: left;
+		}
+		
+		nav.sidebar .forAnimate{
+			opacity: 1;
+		}
+                
+      
+	}
+
+     
+        
+  
+  
+ 
+
+    </style>
+    <body>
+        <nav class="navbar navbar-inverse sidebar" role="navigation">
+    <div class="container-fluid">
+		
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Bitcoin</a>
+                </div>
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Dashboard<span style="font-size:16px;" class="pull-right  showopacity glyphicon glyphicon-stats"></span></a></li>
+				<li><a href="#">Buy/Sell<span style="font-size:16px;" class="pull-right  showopacity glyphicon glyphicon-euro"></span></a></li>
+				<li><a href="#">Send/Request<span style="font-size:16px;" class="pull-right  showopacity glyphicon glyphicon-envelope"></span></a></li>
+				<li><a href="#">Accounts<span style="font-size:16px;" class="pull-right  showopacity glyphicon glyphicon-briefcase"></span></a></li>
+				<li><a href="#">Tools<span style="font-size:16px;" class="pull-right  showopacity glyphicon glyphicon-tasks"></span></a></li>
+				<li><a href="#">Settings<span style="font-size:16px;" class="pull-right  showopacity glyphicon glyphicon-cog"></span></a></li>
+                                
+			</ul>
+		</div>
+	</div>
+        </nav>
+        
+        <div class="main">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card c1">
+                        <h3 class="card-header">Header</h3>
+                             <div class="card-block">
+                             <p class="card-text">Lorem Ipsum dolor sit amet.</p>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-2">
+                    <div class="card c2">
+                        <h3 class="card-header">Header</h3>
+                            <div class="card-block">
+                            <p class="card-text">Lorem Ipsum dolor sit amet.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+             <div class="row">
+                <div class="col-md-6">
+                       <div class="card c3">
+                            <h3 class="card-header">Header</h3>
+                                <div class="card-block">
+                                    <p class="card-text">Lorem ipsum dolor sat amet.</p>  
+                                </div>
+                        </div>
+                </div>
+                
+                <div class="col-md-2">
+                        <div class="card c4">
+                            <h3 class="card-header">Header</h3>
+                                <div class="card-block">
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                        </div>
+                </div>
+            </div>              
+        </div>
+        
+        
+
+            
+        
+        
+    </body>
+    <script>
+            function htmlbodyHeightUpdate(){
+		var height3 = $( window ).height();
+		var height1 = $('.nav').height()+50;
+		height2 = $('.main').height();
+		if(height2 > height3){
+			$('html').height(Math.max(height1,height3,height2)+10);
+			$('body').height(Math.max(height1,height3,height2)+10);
+		}
+		else
+		{
+			$('html').height(Math.max(height1,height3,height2));
+			$('body').height(Math.max(height1,height3,height2));
+		}
+		
+	}
+	$(document).ready(function () {
+		htmlbodyHeightUpdate();
+		$( window ).resize(function() {
+			htmlbodyHeightUpdate();
+		});
+		$( window ).scroll(function() {
+			height2 = $('.main').height();
+  			htmlbodyHeightUpdate();
+		});
+	});
+        </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>

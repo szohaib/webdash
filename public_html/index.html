@@ -9,247 +9,14 @@ and open the template in the editor.
         <title>Web Dash</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
--->        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"><!--
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
-         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+        <link href="indexstyle.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
     </head>
     
-    <style>
-        
-          body,html{
-		height: 100%;
-	}
-
-	
-	.main .row{
-		padding: 0px;
-		margin: 0px;
-                margin-top: 10px;
-	}
-
-	
-
-	nav.sidebar.navbar {
-		border-radius: 0px;
-	}
-
-	nav.sidebar, .main{
-            -webkit-transition: margin 200ms ease-out;
-	    -moz-transition: margin 200ms ease-out;
-	    -o-transition: margin 200ms ease-out;
-	    transition: margin 200ms ease-out;
-            
-	}
-
-	
-	.main{
-		padding: 10px 10px 0 10px;
-	}
-        
-         
-
-	
-	@media (min-width: 200px) {
-	
-		.main{
-                        position: absolute;
-			width: calc(100% - 40px); 
-			margin-left: 40px;
-			float: right;
-		}
-
-		
-		nav.sidebar:hover + .main{
-			margin-left: 200px;
-		}
-
-		
-		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-			margin-left: 0px;
-		}
-		
-		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
-			text-align: center;
-			width: 100%;
-			margin-left: 0px;
-		}
-
-		
-		nav.sidebar a{
-			padding-right: 10px;
-		}
-
-		
-
-
-		
-		nav.sidebar .navbar-nav .open .dropdown-menu {
-			position: static;
-			float: none;
-			width: auto;
-			margin-top: 0;
-			
-			border: 0;
-			-webkit-box-shadow: none;
-			
-		}
-
-		
-		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
-			padding: 0 0px 0 0px;
-		}
-
-                
-		nav.sidebar{
-			width: 200px;
-			height: 150%;
-			margin-left: -160px;
-			float: left;
-			z-index: 8000;
-			margin-bottom: 0px;
-                        background-color: black;
-                        border: none;
-                        
-		}
-
-		
-		nav.sidebar li {
-			width: 100%;
-		}
-
-		
-		nav.sidebar:hover{
-			margin-left: 0px;
-		}
-		
-		.forAnimate{
-			opacity: 0;
-		}
-           .fdiv{
-            margin-top: -10px;
-            margin-left: -12px;
-            border: none;
-            background-color: green;
-            width: 114%;
-            height: 66px;
-            background-color: black;
-        }
-            }
-
-	
-
-	@media (min-width: 768px) {
-        
-            
-		nav.sidebar:hover + .main{
-			margin-left: 200px;
-		}
-
-		
-		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-			margin-left: 0px;
-                        
-		}
-		
-		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
-			text-align: center;
-			width: 100%;
-			margin-left: 0px;
-                        
-		}
-
-		
-		nav.sidebar a{
-			padding-left: 0px;
-                        
-                        
-		}
-
-		
-
-
-		
-		nav.sidebar .navbar-nav .open .dropdown-menu {
-			position: static;
-			float: none;
-			width: auto;
-			margin-top: 0;
-			
-			border: 0;
-			-webkit-box-shadow: none;
-			
-		}
-
-		
-		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
-			padding: 0 0px 0 0px;
-		}
-
-                
-		nav.sidebar{
-			width: 200px;
-			height: 150%;
-			margin-left: -160px;
-			float: left;
-			z-index: 8000;
-			margin-bottom: 0px;
-                        background-color: black;
-                        border: none;
-		}
-
-		
-		nav.sidebar li {
-			width: 100%;
-                        
-                        
-		}
-
-		
-		nav.sidebar:hover{
-			margin-left: 0px;
-		}
-		
-		.forAnimate{
-			opacity: 0;
-		}
-
-		
-		.main{
-                       
-			width: calc(100% - 200px); 
-			margin-left: 200px;
-		}
-
-		
-		nav.sidebar{
-			margin-left: 0px;
-			float: left;
-		}
-		
-		nav.sidebar .forAnimate{
-			opacity: 1;
-		}
-                
-        .fdiv{
-            margin-top: -10px;
-            margin-left: -11px;
-            background-color: green;
-            width: 100%;
-            height: 60px;
-            background-color: black;
-        }
-       
-	}
-
-
-       
-  
-  
- 
-
-    </style>
+   
     <body class="grey lighten-4">
         <div>
             <div style="padding-top: 10px" class=" fdiv  blue darken-3">
@@ -266,8 +33,8 @@ and open the template in the editor.
 			<ul class="nav navbar-nav">
                             
                             <li><a href="#" style="color:white" >Dashboard<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-stats"></span></a></li>
-				<li><a href="#" style="color:white">Trade<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-euro"></span></a></li>
-				<li><a href="#" style="color:white">My Wallet<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-envelope"></span></a></li>
+				<li><a href="#" style="color:white">Trade<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-bitcoin"></span></a></li>
+				<li><a href="#" style="color:white">My Wallet<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-credit-card"></span></a></li>
 				<li><a href="#" style="color:white">Service<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-briefcase"></span></a></li>
 				<li><a href="#" style="color:white">Support<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-tasks"></span></a></li>
 				
@@ -281,8 +48,9 @@ and open the template in the editor.
 <!--            <div>
                 <div class="fdiv blue darken-3"></div>
             </div>-->
+<div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 col-lg-6">
+                <div class="col-md-6 col-12 col-lg-6">
                     <div class="card c1">
                         <h3 class="card-header">Header</h3>
                              <div class="card-block">
@@ -291,7 +59,7 @@ and open the template in the editor.
                     </div>
                 </div>
                 
-                <div class="col-md-12 col-lg-6 ">
+                <div class="col-md-6 col-12 col-lg-6 ">
                     <div class="card c2">
                         <h3 class="card-header">Header</h3>
                             <div class="card-block">
@@ -303,16 +71,16 @@ and open the template in the editor.
             
             
              <div class="row">
-                <div class="col-md-12 col-lg-6 ">
+                <div class="col-md-6 col-12 col-lg-6 ">
                        <div class="card c3">
                             <h3 class="card-header">Header</h3>
                                 <div class="card-block">
-                                    <p class="card-text">Lorem ipsum dolor sat amet.</p>  
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>  
                                 </div>
                         </div>
                 </div>
                 
-                <div class="col-md-12 col-lg-6 ">
+                <div class="col-md-6 col-12 col-lg-6 ">
                         <div class="card c4">
                             <h3 class="card-header">Header</h3>
                                 <div class="card-block">
@@ -320,7 +88,8 @@ and open the template in the editor.
                                 </div>
                         </div>
                 </div>
-            </div>              
+            </div>
+</div>
         </div>
         
         

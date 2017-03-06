@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <title>Web Dash</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
         <link href="indexstyle.css" rel="stylesheet">
@@ -32,7 +32,7 @@ and open the template in the editor.
 
 			<ul class="nav navbar-nav">
                             
-                            <li><a href="#" style="color:white" >Dashboard<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-stats"></span></a></li>
+                            <li class="active"><a href="#" style="color:white">Dashboard<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-stats"></span></a></li>
 				<li><a href="#" style="color:white">Trade<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-bitcoin"></span></a></li>
 				<li><a href="#" style="color:white">My Wallet<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-credit-card"></span></a></li>
 				<li><a href="#" style="color:white">Service<span style="font-size:16px; color:white" class="pull-right  showopacity glyphicon glyphicon-briefcase"></span></a></li>
@@ -45,25 +45,23 @@ and open the template in the editor.
         </nav>
         
         <div class="main">
-<!--            <div>
-                <div class="fdiv blue darken-3"></div>
-            </div>-->
+
 <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-12 col-lg-6">
-                    <div class="card c1">
-                        <h3 class="card-header">Header</h3>
-                             <div class="card-block">
-                             <p class="card-text">Lorem Ipsum dolor sit amet.</p>
+                    <div class="card hoverable">
+                            <div class="card-content">
+                            <span class="card-title">Card Title</span>
+                            <p>Lorem Ipsum dolor sit amet.</p>
                             </div>
                     </div>
                 </div>
                 
                 <div class="col-md-6 col-12 col-lg-6 ">
-                    <div class="card c2">
-                        <h3 class="card-header">Header</h3>
-                            <div class="card-block">
-                            <p class="card-text">Lorem Ipsum dolor sit amet.</p>
+                     <div class="card hoverable">
+                            <div class="card-content">
+                            <span class="card-title">Card Title</span>
+                            <p>Lorem Ipsum dolor sit amet.</p>
                             </div>
                     </div>
                 </div>
@@ -72,20 +70,20 @@ and open the template in the editor.
             
              <div class="row">
                 <div class="col-md-6 col-12 col-lg-6 ">
-                       <div class="card c3">
-                            <h3 class="card-header">Header</h3>
-                                <div class="card-block">
-                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>  
-                                </div>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                            <span class="card-title">Card Title</span>
+                            <p>Lorem Ipsum dolor sit amet.</p>
+                            </div>
                         </div>
                 </div>
                 
                 <div class="col-md-6 col-12 col-lg-6 ">
-                        <div class="card c4">
-                            <h3 class="card-header">Header</h3>
-                                <div class="card-block">
-                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                                </div>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                            <span class="card-title">Card Title</span>
+                            <p>Lorem Ipsum dolor sit amet.</p>
+                            </div>
                         </div>
                 </div>
             </div>
@@ -124,6 +122,10 @@ and open the template in the editor.
   			htmlbodyHeightUpdate();
 		});
 	});
+        document.addEventListener('touchmove', function(e) {
+	e.preventDefault();
+}, false);
+
         </script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
